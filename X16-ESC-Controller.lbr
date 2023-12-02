@@ -210,7 +210,7 @@
 <circle x="2" y="5" radius="0.70710625" width="0.127" layer="21"/>
 <text x="0.5" y="8.25" size="0.8128" layer="25">&gt;NAME</text>
 </package>
-<package name="1X05" urn="urn:adsk.eagle:footprint:37722/2">
+<package name="1X05" urn="urn:adsk.eagle:footprint:37722/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole - 5 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:5&lt;/li&gt;
@@ -262,7 +262,7 @@
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.524" y="-2.286" size="0.6096" layer="25">&gt;VALUE</text>
 </package>
 <package name="XTAL_ECS-80-S-4X">
 <wire x1="5.675" y1="1.01" x2="5.675" y2="-1.01" width="0.127" layer="51"/>
@@ -1559,6 +1559,27 @@
 <attribute name="MANUFACTURER" value="Samtec"/>
 <attribute name="PARTREV" value="R"/>
 <attribute name="STANDARD" value="Manufacturer Recommendations"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWD_CONN" prefix="J">
+<gates>
+<gate name="G$1" symbol="STM_SWD_SYM" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X05">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="NRST" pad="5"/>
+<connect gate="G$1" pin="SWCLK" pad="2"/>
+<connect gate="G$1" pin="SWDIO" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="3V3 -SWCLK-GND-SWDIO- NRST"/>
 </technology>
 </technologies>
 </device>

@@ -3533,8 +3533,8 @@ Alternate pin configuration
 <part name="TP3" library="X16-ExtraComponents" deviceset="TESTPOINT_5.04MM" device=""/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="NO_SILK_NO_POP" package3d_urn="urn:adsk.eagle:package:38130/2"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.55KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:41389018/1" value="1k"/>
-<part name="JP1" library="X16-ExtraComponents" deviceset="TEST_PIN-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2"/>
-<part name="JP2" library="X16-ExtraComponents" deviceset="TEST_PIN-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name=".." library="X16-ExtraComponents" deviceset="TEST_PIN-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2"/>
+<part name="." library="X16-ExtraComponents" deviceset="TEST_PIN-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -3665,11 +3665,11 @@ Alternate pin configuration
 <attribute name="NAME" x="15.24" y="155.956" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="15.24" y="159.004" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="JP1" gate="A" x="187.96" y="134.62" smashed="yes" rot="R180">
+<instance part=".." gate="A" x="187.96" y="134.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="194.31" y="126.365" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="194.31" y="144.78" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP2" gate="G$1" x="233.68" y="142.24" smashed="yes" rot="R180">
+<instance part="." gate="G$1" x="233.68" y="142.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="240.03" y="136.525" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="240.03" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3761,12 +3761,12 @@ Alternate pin configuration
 <junction x="220.218" y="172.72"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part=".." gate="A" pin="3"/>
 <wire x1="193.04" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 <label x="203.2" y="134.62" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="." gate="G$1" pin="1"/>
 <wire x1="238.76" y1="139.7" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
 <label x="248.92" y="139.7" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3829,7 +3829,7 @@ Alternate pin configuration
 <label x="127" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part=".." gate="A" pin="2"/>
 <wire x1="193.04" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <label x="203.2" y="132.08" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -4026,7 +4026,7 @@ Alternate pin configuration
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part=".." gate="A" pin="1"/>
 <wire x1="193.04" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 <label x="203.2" y="129.54" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -4127,12 +4127,12 @@ Alternate pin configuration
 <junction x="220.218" y="198.12"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part=".." gate="A" pin="5"/>
 <wire x1="193.04" y1="139.7" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
 <label x="203.2" y="139.7" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="." gate="G$1" pin="2"/>
 <wire x1="238.76" y1="142.24" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
 <label x="248.92" y="142.24" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -4172,7 +4172,7 @@ Alternate pin configuration
 <label x="127" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part=".." gate="A" pin="4"/>
 <wire x1="193.04" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <label x="203.2" y="137.16" size="1.778" layer="95" align="bottom-right"/>
 </segment>

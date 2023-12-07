@@ -1110,6 +1110,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.15875" y1="0" x2="-0.15875" y2="0.3175" width="0.127" layer="51"/>
 <wire x1="0.15875" y1="0" x2="-0.15875" y2="-0.3175" width="0.127" layer="51"/>
 </package>
+<package name="LED-1206-HIDDENSILK" urn="urn:adsk.eagle:footprint:41389297/1" library_version="2">
+<wire x1="0.6474" y1="0.6825" x2="0.6474" y2="-0.6825" width="0.2032" layer="21"/>
+<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
+<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
+<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 <package name="LED-1206" urn="urn:adsk.eagle:footprint:39304/2" library_version="2">
 <description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
 
@@ -1181,16 +1191,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="LED-1206-HIDDENSILK" urn="urn:adsk.eagle:footprint:41389297/1" library_version="2">
-<wire x1="0.6474" y1="0.6825" x2="0.6474" y2="-0.6825" width="0.2032" layer="21"/>
-<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
-<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 <package name="LED-0805" urn="urn:adsk.eagle:footprint:41389303/1" library_version="2">
 <description>&lt;B&gt;LED 0805 SMT&lt;/B&gt;&lt;p&gt;
 0805, surface mount.
@@ -1231,6 +1231,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packageinstance name="LED-0603"/>
 </packageinstances>
 </package3d>
+<package3d name="LED-1206-HIDDENSILK" urn="urn:adsk.eagle:package:41389312/1" type="box" library_version="2">
+<packageinstances>
+<packageinstance name="LED-1206-HIDDENSILK"/>
+</packageinstances>
+</package3d>
 <package3d name="LED-1206" urn="urn:adsk.eagle:package:39352/2" type="box" library_version="2">
 <description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
 
@@ -1260,11 +1265,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <packageinstances>
 <packageinstance name="LED-1206-BOTTOM"/>
-</packageinstances>
-</package3d>
-<package3d name="LED-1206-HIDDENSILK" urn="urn:adsk.eagle:package:41389312/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="LED-1206-HIDDENSILK"/>
 </packageinstances>
 </package3d>
 <package3d name="LED-0805" urn="urn:adsk.eagle:package:41389318/1" type="box" library_version="2">
@@ -3514,10 +3514,10 @@ Alternate pin configuration
 <part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:41385090/1" value="0.1uF"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.55KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:41389018/1" value="1k"/>
-<part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="-0603-WE" package3d_urn="urn:adsk.eagle:package:39354/2" value="Green"/>
+<part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0805-PG" package3d_urn="urn:adsk.eagle:package:41389318/1" value="Green"/>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="NO_SILK_NO_POP" package3d_urn="urn:adsk.eagle:package:38130/2"/>
-<part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="-0603-WE" package3d_urn="urn:adsk.eagle:package:39354/2" value="Green"/>
+<part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0805-PG" package3d_urn="urn:adsk.eagle:package:41389318/1" value="Green"/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.55KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:41389018/1" value="150"/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="U1" library="X16-ESC-Controller" deviceset="AZ1117IH-3.3TRG1" device=""/>
@@ -3601,7 +3601,6 @@ Alternate pin configuration
 </instance>
 <instance part="D1" gate="G$1" x="96.52" y="205.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="99.949" y="210.312" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="94.615" y="210.312" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
 </instance>
 <instance part="GND7" gate="1" x="96.52" y="218.44" smashed="yes" rot="R180">
 <attribute name="VALUE" x="96.52" y="218.694" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
@@ -3610,8 +3609,8 @@ Alternate pin configuration
 <attribute name="VALUE" x="154.94" y="183.134" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="154.94" y="203.708" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="D2" gate="G$1" x="195.58" y="86.36" smashed="yes" rot="R180">
-<attribute name="NAME" x="199.009" y="90.932" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="D2" gate="G$1" x="195.58" y="88.9" smashed="yes">
+<attribute name="NAME" x="192.151" y="84.328" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="R6" gate="G$1" x="195.58" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="194.056" y="78.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -3981,12 +3980,6 @@ Alternate pin configuration
 <label x="96.52" y="124.46" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-</segment>
-</net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="07"/>
@@ -4115,11 +4108,6 @@ Alternate pin configuration
 <label x="165.1" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="91.44" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<label x="193.04" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="220.98" y1="198.12" x2="220.218" y2="198.12" width="0.1524" layer="91"/>
 <label x="210.82" y="198.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
@@ -4135,6 +4123,11 @@ Alternate pin configuration
 <pinref part="." gate="G$1" pin="2"/>
 <wire x1="238.76" y1="142.24" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
 <label x="248.92" y="142.24" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="195.58" y1="91.44" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
+<label x="195.58" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5.2V" class="0">
@@ -4187,6 +4180,12 @@ Alternate pin configuration
 <pinref part="J6" gate="G$1" pin="09"/>
 <wire x1="33.02" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
 <label x="25.4" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>

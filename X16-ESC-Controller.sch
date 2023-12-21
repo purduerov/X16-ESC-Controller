@@ -4062,8 +4062,8 @@ Alternate pin configuration
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
 <wire x1="76.2" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="165.1" x2="60.96" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="175.26" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="165.1" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="177.8" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="177.8" x2="30.48" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="175.26" x2="43.18" y2="177.8" width="0.1524" layer="91"/>

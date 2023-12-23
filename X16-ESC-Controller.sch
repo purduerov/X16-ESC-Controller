@@ -13,7 +13,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
@@ -291,9 +291,9 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="21"/>
 </package>
 <package name="SOT223_AZ1117I_6P5X3P5_DIO">
-<smd name="1" x="-2.3" y="-3.2258" dx="0.8636" dy="1.5494" layer="1"/>
-<smd name="2" x="0" y="-3.2258" dx="0.8636" dy="1.5494" layer="1"/>
-<smd name="3" x="2.3" y="-3.2258" dx="0.8636" dy="1.5494" layer="1"/>
+<smd name="1" x="-2.3" y="-3.2258" dx="0.8636" dy="1.5494" layer="1" thermals="no"/>
+<smd name="2" x="0" y="-3.2258" dx="0.8636" dy="1.5494" layer="1" thermals="no"/>
+<smd name="3" x="2.3" y="-3.2258" dx="0.8636" dy="1.5494" layer="1" thermals="no"/>
 <wire x1="-1.905" y1="-1.7526" x2="-2.7178" y2="-1.7526" width="0.1524" layer="51"/>
 <wire x1="-2.7178" y1="-1.7526" x2="-2.7178" y2="-3.6576" width="0.1524" layer="51"/>
 <wire x1="-2.7178" y1="-3.6576" x2="-1.905" y2="-3.6576" width="0.1524" layer="51"/>
@@ -316,12 +316,6 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-3.2512" y1="1.7526" x2="-3.2512" y2="-1.7526" width="0.1524" layer="51"/>
 <wire x1="-2.8702" y1="-1.4986" x2="-3.1242" y2="-1.4986" width="0" layer="51" curve="-180"/>
 <wire x1="-3.1242" y1="-1.4986" x2="-2.8702" y2="-1.4986" width="0" layer="51" curve="-180"/>
-<polygon width="0.0254" layer="1">
-<vertex x="1.5748" y="4.0005"/>
-<vertex x="-1.5748" y="4.0005"/>
-<vertex x="-1.5748" y="2.4511"/>
-<vertex x="1.5748" y="2.4511"/>
-</polygon>
 <polygon width="0.0254" layer="29">
 <vertex x="1.6002" y="4.3561"/>
 <vertex x="-1.6002" y="4.3561"/>
@@ -420,6 +414,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-4.6482" y1="-3.6576" x2="-4.3942" y2="-3.6576" width="0.1524" layer="21" curve="-180"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<smd name="4" x="0" y="3.2258" dx="3.1496" dy="1.5494" layer="1" thermals="no"/>
 </package>
 <package name="SOT223_AZ1117I_6P5X3P5_DIO-M">
 <smd name="1" x="-2.3" y="-3.2766" dx="0.9144" dy="1.8542" layer="1"/>
@@ -825,7 +820,7 @@ DIN A3, landscape with location and doc. field</description>
 <connects>
 <connect gate="A" pin="ADJ/GND" pad="1"/>
 <connect gate="A" pin="INPUT" pad="3"/>
-<connect gate="A" pin="OUTPUT" pad="2"/>
+<connect gate="A" pin="OUTPUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3520,11 +3515,10 @@ Alternate pin configuration
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0805-PG" package3d_urn="urn:adsk.eagle:package:41389318/1" value="Green"/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.55KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:41389018/1" value="150"/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U1" library="X16-ESC-Controller" deviceset="AZ1117IH-3.3TRG1" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:41385090/1" value="4.7uF"/>
+<part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:41385090/1" value="10uF"/>
 <part name="GND14" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:41385090/1" value="4.7uF"/>
+<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:41385090/1" value="22uF"/>
 <part name="GND15" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="J6" library="TMMH-110-05-F-D" deviceset="TMMH-110-05-F-D" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -3535,6 +3529,7 @@ Alternate pin configuration
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="2.55KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:41389018/1" value="1k"/>
 <part name=".." library="X16-ExtraComponents" deviceset="TEST_PIN-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2"/>
 <part name="." library="X16-ExtraComponents" deviceset="TEST_PIN-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="U1" library="X16-ESC-Controller" deviceset="AZ1117IH-3.3TRG1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3619,10 +3614,6 @@ Alternate pin configuration
 <instance part="GND10" gate="1" x="195.58" y="71.12" smashed="yes">
 <attribute name="VALUE" x="195.58" y="70.866" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U1" gate="A" x="104.14" y="81.28" smashed="yes">
-<attribute name="NAME" x="124.8156" y="90.3986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="124.1806" y="87.8586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
 <instance part="GND13" gate="1" x="99.06" y="76.2" smashed="yes">
 <attribute name="VALUE" x="99.06" y="75.946" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
@@ -3672,6 +3663,10 @@ Alternate pin configuration
 <attribute name="NAME" x="240.03" y="136.525" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="240.03" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U1" gate="A" x="104.14" y="81.28" smashed="yes">
+<attribute name="NAME" x="124.8156" y="90.3986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="124.1806" y="87.8586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3713,10 +3708,10 @@ Alternate pin configuration
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="ADJ/GND"/>
 <wire x1="106.68" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="81.28" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="U1" gate="A" pin="ADJ/GND"/>
 </segment>
 <segment>
 <wire x1="160.02" y1="86.36" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
@@ -4099,13 +4094,13 @@ Alternate pin configuration
 <label x="139.7" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="OUTPUT"/>
 <wire x1="152.4" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="78.74" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <junction x="160.02" y="78.74"/>
 <label x="165.1" y="68.58" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="OUTPUT"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="198.12" x2="220.218" y2="198.12" width="0.1524" layer="91"/>
@@ -4142,13 +4137,13 @@ Alternate pin configuration
 <label x="20.32" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="INPUT"/>
 <wire x1="152.4" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="81.28" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <junction x="160.02" y="81.28"/>
 <label x="165.1" y="88.9" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="INPUT"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="185.42" x2="220.218" y2="185.42" width="0.1524" layer="91"/>
